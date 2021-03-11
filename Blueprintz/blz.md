@@ -1,7 +1,12 @@
 # BLZ (File Format)
 
+
+## Introduction
 **BLZ** is the (custom) file format/extention the editor uses to save projects in. It is custom designed and made for ease of use and so its lightweight/small.
 Our file is just json but compressed with a custom compression algorithm, when the file is decompressed the JSON has this model. (*see the codesample below*)
+
+## Datastructure
+The decompressed JSON has this model. (*see the codeblock below*)
 
 ```json
 {
@@ -28,11 +33,25 @@ Our file is just json but compressed with a custom compression algorithm, when t
 The design of the model is still in progress, and will change in the future!
 ```
 
+## Algorithm
+
 To compress the JSON you would do the following steps.
 
 1. xxx
 2. xxx
 3. xxx
 
+## Code Samples
+In this section are a few codesamples on how to intergrate the algorithm's. These are in pseudo-code.
+
+This is the pseudo-code for the compression
+```{r, tidy=FALSE, eval=FALSE, highlight=FALSE }
+
+```
+
+This is the pseudo-code for the decompression
+```{r, tidy=FALSE, eval=FALSE, highlight=FALSE }
+
+```
 
 Page Contributors: @daanbreur
