@@ -45,12 +45,12 @@ To compress the JSON you would do the following steps.
 In this section are a few codesamples on how to intergrate the algorithm's. These are in pseudo-code.
 
 The code-block below contains the pseudo-code for compression.
-```{r, tidy=FALSE, eval=FALSE, highlight=FALSE}
+```{r, eval=FALSE}
 Nothing here yet.
 ```
 
 The following code-block contains the pseudo-code for decompression.
-```{r, tidy=FALSE, eval=FALSE, highlight=FALSE}
+```{r, eval=FALSE}
 Nothing here yet.
 ```
 
