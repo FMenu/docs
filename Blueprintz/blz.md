@@ -1,7 +1,3 @@
----
-sort: 1
----
-
 # BLZ (File Format)
 
 **BLZ** is the (custom) file format/extention the editor uses to save projects in. It is custom designed and made for ease of use and so its lightweight/small.
