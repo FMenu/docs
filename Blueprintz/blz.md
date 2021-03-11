@@ -9,20 +9,20 @@ Our file is just json but compressed with a custom compression algorithm, when t
 
 ```json
 {
-  map: "town" | "farm",
-  zoom: 1,
-  fireworks: [
+  "map": "town",
+  "zoom": 1,
+  "fireworks": [
     {
-      id: "",
-      gameIndentifier: "",
-      x: 0,
-      y: 0
+      "id": "",
+      "gameIndentifier": "",
+      "x": 0,
+      "y": 0
     }
   ],
-  fuses: [
+  "fuses": [
     {
-      speed: 1 | 2 | 3 | 4,
-      connectedFireworks: [ "", "" ]
+      "speed": 1,
+      "connectedFireworks": [ "", "" ]
     }
   ]
 }
