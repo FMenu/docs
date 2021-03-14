@@ -2,7 +2,7 @@
 
 
 ## Introduction
-The game saves the schematics/blueprints to a json file, check [#Datastructure](#Datastructure) for information about the datastructure. Check [#Types](#Types) for information about available types, eg FuseTypes, FireworksIds.
+The game saves the schematics/blueprints to a json file, check [#Datastructure](#datastructure) for information about the datastructure. Check [#Types](#types) for information about available types, eg FuseTypes, FireworksIds.
 
 ## Datastructure
 The model of the json is the following (*see the codeblock below*)
