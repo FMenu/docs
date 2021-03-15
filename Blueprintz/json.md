@@ -155,21 +155,30 @@ We are still working on the types section of this page.
 
 ### Tubes
 
-```note
-Still in research!
-```
+- PreloadedTube_CodyBoom
+- PreloadedTube_DraeBlast
+- PreloadedTube_FoxUnlocked
+- PreloadedTube_Imphentazia
+- PreloadedTube_MrBeats
+- PreloadedTube_Pawluten
+- PreloadedTube_PewDiePew
 
 ### Props
 
-```note
-Still in research!
-```
+- Prop_Prototype_Crate
+- Prop_Town_PropaneTank_01
+- Prop_Town_PropaneTank_02
+- Prop_Town_PropaneTank_Tall_01
+- Prop_Town_PropaneTank_Tall_02
 
 ### Fuses
 
-```note
-Still in research!
-```
+Fuses are a bit different, in the EntityDefenitionId you use; FuseConnectionEntityDefinition. Then inside the FuseTypeId, Insde CustomComponentData/FuseConnection/CustomData you uses one of the following ids.
+
+- SlowFuseConnectionType
+- MediumFuseConnectionType
+- FastFuseConnectionType
+- InstantFuseConnectionType
 
 ## Code Samples
 
