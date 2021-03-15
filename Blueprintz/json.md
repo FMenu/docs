@@ -2,7 +2,7 @@
 
 
 ## Introduction
-The game saves the schematics/blueprints to a json file, check [#Datastructure](#Datastructure) for information about the datastructure. Check [#Types](#Types) for information about available types, eg FuseTypes, FireworksIds.
+The game saves the schematics/blueprints to a json file, check [#Datastructure](#datastructure) for information about the datastructure. Check [#Types](#types) for information about available types, eg FuseTypes, FireworksIds. If you want codesamples go to [#Code Samples](#code_samples)
 
 ## Datastructure
 The model of the json is the following (*see the codeblock below*)
@@ -86,4 +86,121 @@ The model of the json is the following (*see the codeblock below*)
 
 ```note
 We are still working on the types section of this page.
+```
+
+### Rockets
+
+- Rocket_AmazingGranny_Purple
+- Rocket_AmazingGranny_Yellow
+- Rocket_ChuteBoi_Blue
+- Rocket_ChuteBoi_Green
+- Rocket_ChuteBoi_Purple
+- Rocket_ChuteBoi_Red
+- Rocket_Cobber905Blue
+- Rocket_Cobber905Green
+- Rocket_Cobber905Red
+- Rocket_Cobber905White
+- Rocket_Cobber905Yellow
+- Rocket_FearOfTheDark
+- Rocket_Lunar2021_Oxblaster
+- Rocket_Lunar2021_Oxcaper
+- Rocket_Slammer
+- Rocket_Strobilicious
+- Rocket_StrobingBob
+- Rocket_ThicBilly
+- Rocket_Viper
+- Rocket_ViperToo
+- Rocket_WorldStopper
+
+### Cakes
+
+- Cake_2021
+- Cake_BeeHive
+- Cake_Boom
+- Cake_ChineseWall
+- Cake_Criminalis
+- Cake_Dragon
+- Cake_FatBill
+- Cake_Lunar2021_Oxcelurator
+- Cake_Lunar2021_OxWannaGo
+- Cake_PopperBoi
+- Cake_ShogunCrackling
+- Cake_TheMessenger
+
+### Firecrackers
+
+- Firecracker_DoomBoom
+- Firecracker_KokkenRulle
+- Firecracker_LadyFingers
+- Firecracker_MaleToes
+- Firecracker_Snapper_Green
+- Firecracker_Snapper_Purple
+- Firecracker_Snapper_Red
+- Firecracker_Snapper_White
+
+### Novelties
+
+- RomanCandle_InsaneScreamer
+- RomanCandle_MicoolaCandle
+- RomanCandle_MoStick
+- RomanCandle_SantaWasHere
+- RomanCandle_WandOfWizards
+- Whistler_ScreamingPal
+- Zipper_Mozzie
+
+### Special
+
+- Special_Shell_Tim
+- Special_Rocket_KarlSon **NOT IN THE GAME YET**
+
+### Tubes
+
+```note
+Still in research!
+```
+
+### Props
+
+```note
+Still in research!
+```
+
+### Fuses
+
+```note
+Still in research!
+```
+
+## Code Samples
+
+The UUID is a v4 uuid. Here are a few ways of generating them in different languages
+
+```javascript
+// NodeJS
+const uuid = require('uuid');
+console.log(uuid.v4());
+
+// Browser
+function uuid() {
+  var uuid = "", i, random;
+  for (i = 0; i < 32; i++) {
+    random = Math.random() * 16 | 0;
+
+    if (i == 8 || i == 12 || i == 16 || i == 20) {
+      uuid += "-";
+    }
+    uuid += (i == 12 ? 4 : (i == 16 ? (random & 3 | 8) : random)).toString(16);
+  }
+  return uuid;
+}
+console.log(uuid())
+```
+
+```python
+import uuid
+print(str(uuid.uuid4()))
+```
+
+```csharp
+System.Guid.NewGuid().ToString();
 ```
