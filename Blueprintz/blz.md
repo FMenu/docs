@@ -10,20 +10,34 @@ The decompressed JSON has this model. (*see the codeblock below*)
 
 ```json
 {
+  "projectName": "",
+  "projectDescription": "Blueprintz Generator",
   "map": "town",
-  "zoom": 1,
   "fireworks": [
     {
-      "id": "",
-      "gameIndentifier": "",
-      "x": 0,
-      "y": 0
+      "id": "guid",
+      "fireworkIndentifier": "PreloadedTube_MrBeats",
+      "position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "rotation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 0,
+        "IsIdentity": false
+      },
+      "isKinematic": true
     }
   ],
   "fuses": [
     {
-      "speed": 1,
-      "connectedFireworks": [ "", "" ]
+      "id": "guid",
+      "idConnectionA": "guidFireworkA",
+      "idConnectionB": "guidFireworkB",
+      "speed": 1
     }
   ]
 }
@@ -31,29 +45,6 @@ The decompressed JSON has this model. (*see the codeblock below*)
 
 ```note
 The design of the model is still in progress, and will change in the future!
-```
-
-## Algorithm
-
-To compress the JSON you would do the following steps.
-
-1. xxx
-2. xxx
-3. xxx
-
-## Code Samples
-In this section are a few codesamples on how to intergrate the algorithm's. These are in pseudo-code.
-
-The code-block below contains the pseudo-code for compression.
-
-```r
-Nothing here yet.
-```
-
-The following code-block contains the pseudo-code for decompression.
-
-```r
-Nothing here yet.
 ```
 
 Page Contributors: @daanbreur
