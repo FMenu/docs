@@ -10,20 +10,34 @@ The decompressed JSON has this model. (*see the codeblock below*)
 
 ```json
 {
+  "projectName": "",
+  "projectDescription": "Blueprintz Generator",
   "map": "town",
-  "zoom": 1,
   "fireworks": [
     {
-      "id": "",
-      "gameIndentifier": "",
-      "x": 0,
-      "y": 0
+      "id": "guid",
+      "fireworkIndentifier": "PreloadedTube_MrBeats",
+      "position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "rotation": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "W": 0,
+        "IsIdentity": false
+      },
+      "isKinematic": true
     }
   ],
   "fuses": [
     {
-      "speed": 1,
-      "connectedFireworks": [ "", "" ]
+      "id": "guid",
+      "idConnectionA": "guidFireworkA",
+      "idConnectionB": "guidFireworkB",
+      "speed": 1
     }
   ]
 }
