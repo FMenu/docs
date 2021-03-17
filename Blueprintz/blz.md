@@ -58,10 +58,10 @@ To compress the JSON you would do the following steps.
 ## Code Samples
 In this section are a few codesamples on how to intergrate the algorithm's. These are in pseudo-code.
 
-The code-block below contains the pseudo-code for compression written in C#.
+The code-blocks below contains example-code for compression written in C#.
 
 The BSON generation:
-```r
+```cs
 var obj = JsonConvert.DeserializeObject(json);
 JsonSerializer serializer = new JsonSerializer();
 MemoryStream stream = new MemoryStream();
@@ -70,7 +70,7 @@ serializer.Serialize(writer, obj);
 string output = System.Text.Encoding.ASCII.GetString(stream.ToArray());
 ```
 Zipping algorithm:
-```r
+```cs
 public static byte[] Zip(string str)
 {
   var bytes = System.Text.Encoding.UTF8.GetBytes(str);
@@ -91,9 +91,9 @@ public static byte[] Zip(string str)
 }
 ```
 
-The following code-block contains the pseudo-code for decompression.
+The following code-blocks contain example-code for decompression written in C#.
 
-```r
+```cs
 Nothing here yet.
 ```
 
